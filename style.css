@@ -14,7 +14,7 @@
   }
 
   body {
-    background-color: black;
+    background-color: snow;
   }
   h1 {
     text-transform: uppercase;
@@ -26,7 +26,7 @@
   }
 
   #white {
-    color: white
+    color: forestgreen
   }
   
   .Mesh {
