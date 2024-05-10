@@ -1,0 +1,38 @@
+.color-title {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Libre Basketville", serif;
+  }
+
+ .color-text {
+    font-weight: normal;
+  }
+  
+  #slategray {
+    color: slategray;
+  }
+
+  body {
+    background-color: black;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: 5rem
+  }
+
+  h2 {
+    font-size: 2rem
+  }
+
+  #white {
+    color: white
+  }
+  
+  .Mesh {
+    width: 100%
+  }
+
+  .Paris {
+    width: 100%
+  }
