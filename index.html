@@ -5,289 +5,291 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elysium</title>
     <link rel="stylesheet" href="./style.css" />
+    <!--Google Font API-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
-<script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Bootstrap Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-  <div> 
-    <h2>Login</h2>
-    <form id="loginForm">
-        Username: <input type="text" id="username" required><br>
-        Password: <input type="password" id="password" required><br>
-        <button id="loginbutton" type="submit">Login</button>
-    </form>
-  </div>
-  <script src="login.js"></script>
+<!--Start of top bar navigation-->
   <div class="navigation">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
-          <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849" alt="Elysium brand icon"/>
-            </svg>Elysium</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849" alt="Elysium brand icon"/>
+        </svg>Elysium</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Flight</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Accomodation</a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Export Excel</a>
-                  </li>
-                </ul>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+            <ul class="dropdown-menu">
+            <li>
+            <a class="dropdown-item" href="#">Flight</a>
             </li>
-          </ul>
-          <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Destinations" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Check</button>
-          </form>
+            <li>
+            <a class="dropdown-item" href="#">Accomodation</a>
+            </li>
+            <li>
+            <hr class="dropdown-divider">
+            </li>
+            <li>
+            <a class="dropdown-item" href="#">Export Excel</a>
+            </li>
+            </ul>
+            </li>
+            </ul>
+            <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Destinations" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Check</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    </div>
+<!--End of top bar navigation-->
+
+
+<main>
+<!--Start of Carousel-->
+  <div class="container">
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="./images/AmalfiCoastItaly.webp" class="bd-placeholder-img" width="100%" height="250px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            <div class="container">
+              <div class="carousel-caption text-start">
+              <h1>Amalfi Coast</h1>
+              <p class="opacity-75">Italy</p>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="./images/Scotland.webp" class="bd-placeholder-img" width="100%" height="250px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            <div class="container">
+              <div class="carousel-caption">
+              <h1>Scotland</h1>
+              <p>Scotland</p>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Slovenia.webp" class="bd-placeholder-img" width="100%" height="250px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            <div class="container">
+              <div class="carousel-caption text-end">
+              <h1>Lake Bled</h1>
+              <p>Slovenia</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              </div>
+            </div>
+        </div>
+    </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <style>
+        .carousel-inner {
+        margin-bottom: 20px;
+        }
+      </style>
+    </div>
+  </div>
+<!--End of Carousel-->
+
+  <div id="mainContent" style="display: none;">  
+<!-- Marketing messaging and featurettes-->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<!-- Three columns of text below the carousel -->
+  <div class="container marketing">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="./images/RomeItaly.webp" alt="Rome Italy">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+        <h2 class="fw-normal">Places of Interest</h2>
+        <p>What to do?</p>
+        <p><a class="btn btn-secondary" href="https://www.timeout.com/paris/en">View details »</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img src="./images/Greece.webp" alt="Greece">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+        <h2 class="fw-normal">Accomodation</h2>
+        <p>Where to stay?</p>
+        <p><a class="btn btn-secondary" href="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaMkBiAEBmAEJuAEHyAEM2AEB6AEBiAIBqAIDuAKc7ZCyBsACAdICJGQwYTU2NjFmLTg0ZTctNGRhMC05ZDg0LTk3ODlkNzkyYmY1OdgCBeACAQ&sid=fcf50d8a504313b5ee7aaa69e26c2c42&keep_landing=1&sb_price_type=total&">View details »</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img src="./images/TokyoJapan.webp" alt="Tokyo Japan">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+        <h2 class="fw-normal">Transport</h2>
+        <p>How to go?</p>
+        <p><a class="btn btn-secondary" href="https://www.skyscanner.com.sg/">View details »</a></p>
+      </div>
+    </div>
+<!-- Start of the featurettes --> 
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Itinerary<span class="text-body-secondary">.</span></h2>
+        <p class="lead">Everything in a glance.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Reminders<span class="text-body-secondary">.</span></h2>
+          <p class="lead">Time to start making reservations.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
         </div>
       </div>
-</nav>
-<main>
-     <div class="container">
-        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item">
-              <img src="./Amalfi Coast Italy.webp" class="bd-placeholder-img" width="100%" height="250px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <div class="container">
-                <div class="carousel-caption text-start">
-                  <h1>Amalfi Coast</h1>
-                  <p class="opacity-75">Italy</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item active">
-              <img src="./Scotland.webp" class="bd-placeholder-img" width="100%" height="250px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Scotland</h1>
-                  <p>Scotland</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./Slovenia.webp" class="bd-placeholder-img" width="100%" height="250px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <div class="container">
-                <div class="carousel-caption text-end">
-                  <h1>Lake Bled</h1>
-                  <p>Slovenia</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <style>
-            .carousel-inner {
-            margin-bottom: 20px;
-            }
-        </style></div>
-  <div id="mainContent" style="display: none;">  
-  
-      
-        <!-- Marketing messaging and featurettes
-        ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-      
-        <div class="container marketing">
-      
-          <!-- Three columns of text below the carousel -->
-          <div class="row">
-            <div class="col-lg-4">
-              <img src="./Rome Italy.webp" alt="Rome Italy"
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <h2 class="fw-normal">Places of Interest</h2>
-              <p>What to do?</p>
-              <p><a class="btn btn-secondary" href="https://www.timeout.com/paris/en">View details »</a></p>
-            </div>
-            <div class="col-lg-4">
-              <img src="./Greece.webp" alt="Greece"
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <h2 class="fw-normal">Accomodation</h2>
-              <p>Where to stay?</p>
-              <p><a class="btn btn-secondary" href="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaMkBiAEBmAEJuAEHyAEM2AEB6AEBiAIBqAIDuAKc7ZCyBsACAdICJGQwYTU2NjFmLTg0ZTctNGRhMC05ZDg0LTk3ODlkNzkyYmY1OdgCBeACAQ&sid=fcf50d8a504313b5ee7aaa69e26c2c42&keep_landing=1&sb_price_type=total&">View details »</a></p>
-            </div>
-            <div class="col-lg-4">
-              <img src="./Tokyo Japan.webp" alt="Tokyo Japan"
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-              <h2 class="fw-normal">Transport</h2>
-              <p>How to go?</p>
-              <p><a class="btn btn-secondary" href="https://www.skyscanner.com.sg/">View details »</a></p>
-            </div>
-          </div>
-      
-      
-          <!-- START THE FEATURETTES -->
-      
-          <hr class="featurette-divider">
-      
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1">Itinerary<span class="text-body-secondary">.</span></h2>
-              <p class="lead">Everything in a glance.</p>
-            </div>
-            <div class="col-md-5">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-            </div>
-          </div>
-      
-          <hr class="featurette-divider">
-      
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading fw-normal lh-1">Reminders<span class="text-body-secondary">.</span></h2>
-              <p class="lead">Time to start making reservations.</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-            </div>
-          </div>
-      
-          <hr class="featurette-divider">
-      
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1">Calendar<span class="text-body-secondary">.</span></h2>
-              <p class="lead">Counting down.</p>
-            </div>
-            <div class="col-md-5">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-            </div>
-          </div>
-      
-          <hr class="featurette-divider">
-      
-          <!-- /END THE FEATURETTES -->
-      
+    <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Calendar<span class="text-body-secondary">.</span></h2>
+          <p class="lead">Counting down.</p>
         </div>
-      
-      
-        
-      </main>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-        <div class="Destination">
-          <h2 class="color-text" id="slategray">Destination</h2>
+          <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+          </div>
+      </div>
+    <hr class="featurette-divider">
+<!-- End of the Featurettes -->
+  </div>
+<!-- End of containers below carousel-->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-          <form id="itineraryForm">
-            <div id="flightSegments">
-                <!-- Flight segments will be added here dynamically -->
-            </div>
-            <button type="button" onclick="addFlightSegment()">Add Another Segment</button>
-            <button type="submit">Submit Itinerary</button>
-        </form>
+</main>
 
-        <div class="containerForm">
+<!-- Manual Forms-->
+<!--Start of Destination Forms-->
+  <div class="Destination">
+    <h2 class="color-text" id="slategray">Destination</h2>
+    <form id="itineraryForm">
+      <div id="flightSegments">
+<!-- Flight segments will be added here dynamically -->
+      </div>
+      <button type="button" onclick="addFlightSegment()">Add Another Segment</button>
+      <button type="submit">Submit Itinerary</button>
+    </form>
+      <div class="containerForm">
         <form id="itineraryForm">
           <div class="left-column" id="travelDays">
-              <!-- Travel days will be added here dynamically -->
+<!-- Travel days will be added here dynamically -->
           </div>
           <button type="button" onclick="addTravelDay()">Add Travel Day</button>
           <button type="submit">Submit Itinerary</button>
         </form>
-        
-
-          <div class="right-column">
-          <form id="eventForm" style="display:none;">
-            <label for="events">Event:</label><br>
-            <input type="text" id="events" name="events" value=""><br>
-            <label for="transportation">Transportation:</label><br>
-            <input type="text" id="transportation" name="transportation" value=""><br>
-            <label for="time">Time:</label><br>
-            <input type="time" id="time" name="time" value=""><br>
-            <label for="address">Address:</label><br>
-            <input type="text" id="address" name="address" value=""><br>
-            <label for="reservation">Need to book?</label><br>
-            <input type="checkbox" id="reservation" name="reservation" value=""><br>
-            <label for="additionalinformation">Additional Information</label><br>
-            <input type="text" id="additionalInformation" name="additionalinformation" value=""><br><br>
-            <input type="submit" value="Submit">
-          </form> 
-          </div>
-          <div id="bookingChecklist">
-            <h3>Booking Checklist</h3>
-            <ul id="checklistItems"></ul> 
-          </div>
-        </div>
-
-          <img id="destinationImage" src="./Mesh.webp" alt="Selected Destination">
-          <p id="destinationDescription"></p>
+      <div class="right-column">
+        <form id="eventForm" style="display:none;">
+          <label for="events">Event:</label><br>
+          <input type="text" id="events" name="events" value=""><br>
+          <label for="transportation">Transportation:</label><br>
+          <input type="text" id="transportation" name="transportation" value=""><br>
+          <label for="time">Time:</label><br>
+          <input type="time" id="time" name="time" value=""><br>
+          <label for="address">Address:</label><br>
+          <input type="text" id="address" name="address" value=""><br>
+          <label for="reservation">Need to book?</label><br>
+          <input type="checkbox" id="reservation" name="reservation" value=""><br>
+          <label for="additionalinformation">Additional Information</label><br>
+          <input type="text" id="additionalInformation" name="additionalinformation" value=""><br><br>
+          <input type="submit" value="Submit">
+        </form> 
       </div>
-
-        <img class="Paris" src="Paris France.webp" alt=paris />
-    
-   
+      <div id="bookingChecklist">
+        <h3>Booking Checklist</h3>
+        <ul id="checklistItems"></ul> 
+      </div>
+      </div>
+  </div>
+<!--End of Destination Forms-->
+      
+<!-- Images self made
+  <div>
+    <img id="destinationImage" src="./images/Mesh.webp" alt="Selected Destination">
+    <p id="destinationDescription"></p>
+    <img class="Paris" src="./images/ParisFrance.webp" alt=paris />
     <div class="Date">
-        <h2 class="color-text" id="slategray">Date</h2>
-        <p id="Travelstartdate">Enter your travel start date</p>
+      <h2 class="color-text" id="slategray">Date</h2>
+      <p id="Travelstartdate">Enter your travel start date</p>
     </div>
-    <div>  
-      <button onclick="askForName()">What is your name?</button>
-    </div>
+  </div>
+Can be removed -->
 
-   
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
+<!--Card placement one card only 
+  <div>
+      <style>
         .flex-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh
         }
-    </style>
-    <div class="flex-container"> 
+      </style>
+      <div class="flex-container"> 
         <div class="card" style="width: 18rem;">
-            <img src="Maldives.webp" class="card-img-top" alt="Maldives">
-            <div class="card-body">
-            <h5 class="card-title">Maldives</h5>
-            <p class="card-text">Beach and Sand Resort Living</p>
-            <a href="#" class="btn btn-primary">Select</a>
-            </div>
+          <img src="./images/Maldives.webp" class="card-img-top" alt="Maldives">
+          <div class="card-body">
+          <h5 class="card-title">Maldives</h5>
+          <p class="card-text">Beach and Sand Resort Living</p>
+          <a href="#" class="btn btn-primary">Select</a>
+          </div>
         </div>
-    </div>
+      </div>
+  </div>
+Can be Removed -->
+
+<!-- Start of Footer -->
+  <div>
+    <hr class="featurette-divider">
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>© 2024 Vanessa Inc. <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      <p> Disclaimer: <br>
+        This website is created for learning purposes only. The information provided here should not be considered professional advice. Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website.</p>
+    </footer>
+  </div>
+<!-- End of Footer -->
+
+<!-- Start of Log in Form -->
+  <div> 
+    <h2>Login</h2>
+    <form id="loginForm">
+      Username: <input type="text" id="username" required><br>
+      Password: <input type="password" id="password" required><br>
+      <button id="loginbutton" type="submit">Login</button>
+    </form>
+    <script src="login.js"></script>
+  </div>
+<!-- End of Log in Form -->
+
 </div>
 
-      <!-- FOOTER -->
-      <div><hr class="featurette-divider">
-      <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>© 2024 Vanessa Inc. <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-        <p> Disclaimer:
-          This website is created for learning purposes only. The information provided here should not be considered professional advice. Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website.</p>
-      </footer>
-      </div>
-    </div>
-  </body>
+</body>
+
 </html>
