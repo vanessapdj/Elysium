@@ -1,3 +1,34 @@
+#mainContent {
+  display: none; /* Hidden by default */
+}
+
+#loginForm {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for a subtle 3D effect */
+  width: 300px;
+  position: relative;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#loginbutton {
+  background-color: #4CAF50; /* A nice shade of green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
 
 .color-title {
     font-weight: bold;
@@ -46,10 +77,6 @@
   align-items: center;
 }
 
-#Destinationdropdown {
-  
-}
-
   .Mesh {
     width: 100%
   }
@@ -64,3 +91,60 @@
     color: black
   }
   
+  #flightSegments > div {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+button {
+    margin-top: 10px;
+}
+
+.day-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.activity {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+  display: block;
+}
+
+#eventForm {
+  right: auto ;
+}
+
+.containerForm {
+  display: flex;  /* Establishes a flex container */
+  justify-content: space-between;  /* Spaces out the children (left and right columns) */
+}
+
+.left-column, .right-column {
+  flex: 1;  /* Each column takes up an equal amount of space */
+  padding: 10px;  /* Adds some spacing around the content */
+}
+.left-column {
+  flex: 3;  /* Left column is wider if needed */
+}
+
+.right-column {
+  flex: 2;  /* Right column is narrower if needed */
+}
+
+#bookingChecklist {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #eef;
+}
+
+#checklistItems li {
+  margin-bottom: 5px;
+}

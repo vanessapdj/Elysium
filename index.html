@@ -11,44 +11,59 @@
 <script src="script.js"></script>
 </head>
 <body>
-    <div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
-            <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849" alt="Elysium brand icon"/>
-          </svg>Elysium</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
-                </a>
+  <div> 
+    <h2>Login</h2>
+    <form id="loginForm">
+        Username: <input type="text" id="username" required><br>
+        Password: <input type="password" id="password" required><br>
+        <button id="loginbutton" type="submit">Login</button>
+    </form>
+  </div>
+  <script src="login.js"></script>
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+          <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849" alt="Elysium brand icon"/>
+            </svg>Elysium</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Flight</a></li>
-                  <li><a class="dropdown-item" href="#">Accomodation</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Export Excel</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Flight</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Accomodation</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Export Excel</a>
+                  </li>
                 </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Destinations" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Check</button>
-            </form>
-          </div>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Destinations" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Check</button>
+          </form>
         </div>
-        </nav>
-      <main>
-<div class="container">
+      </div>
+</nav>
+<main>
+     <div class="container">
         <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
@@ -98,7 +113,8 @@
             margin-bottom: 20px;
             }
         </style></div>
-      </div>
+  <div id="mainContent" style="display: none;">  
+  
       
         <!-- Marketing messaging and featurettes
         ================================================== -->
@@ -174,48 +190,63 @@
       
           <!-- /END THE FEATURETTES -->
       
-        </div><!-- /.container -->
+        </div>
       
       
         
       </main>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </div>
-<!-- previous welcome code
-      <div class="Welcome"> 
-        <h1 class="color-title" id="slategray">Welcome</h1>
-        <img class="Mesh" src="Mesh.webp" alt="Mesh" />
-    </div>
--->
-
+    
         <div class="Destination">
           <h2 class="color-text" id="slategray">Destination</h2>
-          <form id="destinationForm">
-              <label for="Destinationdropdown">Choose a destination:</label>
-              <select id="Destinationdropdown" name="Destination" onchange="handleSelectionChange()" multiple>
-                  <option value="">--Please choose an option--</option>
-                  <option value="AmalfiCoastItaly">AmalfiCoastItaly</option>
-                  <option value="Bali">Bali</option>
-                  <option value="BoraBora">Bora Bora</option>
-                  <option value="Finland">Finland</option>
-                  <option value="Greece">Greece</option>
-                  <option value="Maldives">Maldives</option>
-                  <option value="ParisFrance">Paris France</option>
-                  <option value="RomeItaly">Rome Italy</option>
-                  <option value="Scotland">Scotland</option>
-                  <option value="Slovenia">Slovenia</option>
-                  <option value="TokyoJapan">Tokyo Japan</option>
-                  <option value="ViennaAustria">Vienna Austria</option>
-                  <option value="Others">Others</option>
-              </select>
-              <button type="submit">Confirm</button>
-          </form>
+
+          <form id="itineraryForm">
+            <div id="flightSegments">
+                <!-- Flight segments will be added here dynamically -->
+            </div>
+            <button type="button" onclick="addFlightSegment()">Add Another Segment</button>
+            <button type="submit">Submit Itinerary</button>
+        </form>
+
+        <div class="containerForm">
+        <form id="itineraryForm">
+          <div class="left-column" id="travelDays">
+              <!-- Travel days will be added here dynamically -->
+          </div>
+          <button type="button" onclick="addTravelDay()">Add Travel Day</button>
+          <button type="submit">Submit Itinerary</button>
+        </form>
+        
+
+          <div class="right-column">
+          <form id="eventForm" style="display:none;">
+            <label for="events">Event:</label><br>
+            <input type="text" id="events" name="events" value=""><br>
+            <label for="transportation">Transportation:</label><br>
+            <input type="text" id="transportation" name="transportation" value=""><br>
+            <label for="time">Time:</label><br>
+            <input type="time" id="time" name="time" value=""><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" value=""><br>
+            <label for="reservation">Need to book?</label><br>
+            <input type="checkbox" id="reservation" name="reservation" value=""><br>
+            <label for="additionalinformation">Additional Information</label><br>
+            <input type="text" id="additionalInformation" name="additionalinformation" value=""><br><br>
+            <input type="submit" value="Submit">
+          </form> 
+          </div>
+          <div id="bookingChecklist">
+            <h3>Booking Checklist</h3>
+            <ul id="checklistItems"></ul> 
+          </div>
+        </div>
+
           <img id="destinationImage" src="./Mesh.webp" alt="Selected Destination">
           <p id="destinationDescription"></p>
       </div>
 
         <img class="Paris" src="Paris France.webp" alt=paris />
-    </div>
+    
    
     <div class="Date">
         <h2 class="color-text" id="slategray">Date</h2>
@@ -246,14 +277,17 @@
             </div>
         </div>
     </div>
-
+</div>
 
       <!-- FOOTER -->
-      <hr class="featurette-divider">
+      <div><hr class="featurette-divider">
       <footer class="container">
         <p class="float-end"><a href="#">Back to top</a></p>
         <p>© 2024 Vanessa Inc. <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p> Disclaimer:
+          This website is created for learning purposes only. The information provided here should not be considered professional advice. Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website.</p>
       </footer>
+      </div>
     </div>
   </body>
 </html>
