@@ -1,150 +1,101 @@
-#mainContent {
-  display: none; /* Hidden by default */
-}
 
-#loginForm {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for a subtle 3D effect */
-  width: 300px;
-  position: relative;
-}
 
-input[type="text"], input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 8px;
-  margin-bottom: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-#loginbutton {
-  background-color: #4CAF50; /* A nice shade of green */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-}
-
-.color-title {
-    font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
-    font-family: "Dancing Script", serif;
-  }
-
- .color-text {
-    font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
-    font-family: "Dancing Script", serif;
-  }
-  
-  #slategray {
-    color: slategray;
-  }
-
-  body {
-    background-color: snow;
-  }
-  h1 {
-    text-transform: uppercase;
-    font-size: 5rem
-  }
-
-  h2 {
-    font-size: 2rem
-  }
-
-  #Destination {
-    color: forestgreen
-  }
-  
-  #Destinationdropdown {
-    color: gray
-    width: 50%
-  }
-
-#destinationImage {
-  width: 50%;
-  height: auto;
-  display: flex;
+.login-container {
   justify-content: center;
-  align-items: center;
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: hsla(187, 19%, 82%, 0.445);
+  margin-left: 30%;
+  margin-bottom: 150px;
+  margin-top: 45px;
 }
-
-  .Mesh {
-    width: 100%
-  }
-
-  .Paris {
-    width: 100%
-  }
-
-
-
-  #travelstartdate {
-    color: black
-  }
-  
-  #flightSegments > div {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-}
-button {
-    margin-top: 10px;
-}
-
-.day-section {
+.login-container h2 {
   margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  text-align: center;
 }
 
-.activity {
-  margin-top: 10px;
+.backToTop {
+  float: right;
 }
 
-button {
-  margin-top: 10px;
-  display: block;
-}
-
-#eventForm {
-  right: auto ;
-}
-
-.containerForm {
-  display: flex;  /* Establishes a flex container */
-  justify-content: space-between;  /* Spaces out the children (left and right columns) */
-}
-
-.left-column, .right-column {
-  flex: 1;  /* Each column takes up an equal amount of space */
-  padding: 10px;  /* Adds some spacing around the content */
-}
-.left-column {
-  flex: 3;  /* Left column is wider if needed */
-}
-
-.right-column {
-  flex: 2;  /* Right column is narrower if needed */
-}
-
-#bookingChecklist {
+.signup-container {
+  justify-content: center;
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: hsla(72, 40%, 86%, 0.445);
+  margin-left: 30%;
+  margin-bottom: 150px;
   margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #eef;
 }
 
-#checklistItems li {
-  margin-bottom: 5px;
+.signup-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#plannerHeader {
+  text-align: center;
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 100px;
+  left: -250px; /* Initially hidden */
+  background-color: #343a40;
+  padding-top: 20px;
+  transition: left 0.3s;
+}
+.sidebar.visible {
+  left: 0; /* Show the sidebar */
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+.sidebar ul li {
+  padding: 10px;
+  text-align: left;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s, padding-left 0.3s;
+}
+.sidebar ul li a:hover {
+  background-color: #495057;
+  padding-left: 20px;
+}
+.sidebar ul li a.active {
+  background-color: #007bff;
+  padding-left: 20px;
+}
+.sidebar ul li a.active:hover {
+  background-color: #0056b3;
+}
+
+.hamburger {
+  position: fixed;
+  top: 55px;
+  left: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+.day {
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
